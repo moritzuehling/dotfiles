@@ -1,0 +1,114 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+
+@define-color base00 #181818;
+@define-color base01 #282828;
+@define-color base02 #383838;
+@define-color base03 #585858;
+@define-color base04 #b8b8b8;
+@define-color base05 #d8d8d8;
+@define-color base06 #e8e8e8;
+@define-color base07 #f8f8f8;
+@define-color base08 #ab4642;
+@define-color base09 #dc9656;
+@define-color base0A #f7ca88;
+@define-color base0B #a1b56c;
+@define-color base0C #86c1b9;
+@define-color base0D #7cafc2;
+@define-color base0E #ba8baf;
+@define-color base0F #a16946;
+
+
+* {
+    transition: none;
+    box-shadow: none;
+  }
+
+  #waybar {
+    color: @base04;
+    background: rgba(0,0,0,.5);
+    border-bottom: rgba(51, 204, 255, .93) 1px solid;
+    padding-right: 10px;
+  }
+
+  #workspaces {
+    margin-left: 15px;
+  }
+
+  #workspaces button {
+    padding: 0 6px;
+    padding-top: 0px;
+    color: @base05;
+    margin-bottom: 1px;
+    border-radius: 0px;
+    border-style: none;
+  }
+
+  #workspaces button.visible {
+    background-color: rgba(20,20,20,.1);
+    border-radius: 0px;
+    border: rgba(89, 89, 89, .666) 1px solid;
+    border-style: solid solid none solid;
+  }
+
+
+  #workspaces button.active {
+    background-color: rgba(20,20,20,.5);
+    border: rgba(51, 204, 255, .93) 1px solid;
+    border-style: solid solid none solid;
+  }
+
+  #workspaces button.urgent {
+    color: rgba(238, 46, 36, 1);
+  }
+
+  #tray {
+    margin: 4px 14px 4px 4px;
+    border-radius: 4px;
+    background: rgba(0,0,0,.5);
+  }
+
+  #tray * {
+    padding: 0 4px;
+  }
+
+  #tray *:first-child {
+    border-left: none;
+  }
+
+
+  #mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, #custom-spotify, #custom-weather, #custom-mail, #clock, #temperature, #language {
+    margin: 0px 0px;
+    margin-bottom: 1px;
+    padding: 0 6px;
+    padding-top: 0px;
+    border-radius: 0px;
+    min-width: 20px;
+    background: rgba(0,0,0,.5);
+  }
+  #pulseaudio.muted {
+    color: @base0F;
+  }
+
+  #pulseaudio.bluetooth {
+    color: @base0C;
+  }
+
+  #clock {
+    margin: 0px 0px;
+    margin-bottom: 1px;
+
+    background-color: transparent;
+    font-size: 13px;
+  }
+
+  #temperature.critical {
+    color: @base0F;
+  }
+
+  .modules-center {
+  }
