@@ -21,7 +21,9 @@
 @define-color base0D #7cafc2;
 @define-color base0E #ba8baf;
 @define-color base0F #a16946;
+@define-color accent rgba(51, 204, 255, .93);
 
+@import "active.css";
 
 * {
     transition: none;
@@ -31,7 +33,7 @@
   #waybar {
     color: @base04;
     background: rgba(0,0,0,.5);
-    border-bottom: rgba(51, 204, 255, .93) 1px solid;
+    border-bottom: @accent 1px solid;
     padding-right: 10px;
   }
 
@@ -58,7 +60,7 @@
 
   #workspaces button.active {
     background-color: rgba(20,20,20,.5);
-    border: rgba(51, 204, 255, .93) 1px solid;
+    border: @accent 1px solid;
     border-style: solid solid none solid;
   }
 

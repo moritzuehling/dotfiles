@@ -1,0 +1,3 @@
+[screencast]
+exec_before=$HOME/.scripts/screenshare-start.sh
+exec_after=$HOME/.scripts/screenshare-stop.sh
