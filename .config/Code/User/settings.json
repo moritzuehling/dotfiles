@@ -1,0 +1,59 @@
+{
+    "editor.fontLigatures": true,
+    "git.suggestSmartCommit": false,
+    "editor.fontSize": 13,
+    "editor.fontWeight": 400,
+    "emmet.triggerExpansionOnTab": false,
+    "emmet.showExpandedAbbreviation": "never",
+    "editor.tabSize": 2,
+    "editor.suggest.showStatusBar": true,
+    "editor.suggest.showWords": false,
+    "editor.colorDecorators": false,
+    "git.confirmSync": false,
+    "editor.wordWrap": "off",
+    "editor.wordWrapColumn": 200,
+    "editor.wrappingIndent": "indent",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "gitlens.statusBar.enabled": false,
+    "gitlens.defaultDateFormat": "YYYYYY-MM-DD HH:mm:ss",
+    "gitlens.defaultDateShortFormat": "YYYYYY-MM-DD",
+    "gitlens.defaultTimeFormat": "HH:mm:ss",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.guides.bracketPairs": true,
+    "telemetry.telemetryLevel": "off",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "errorLens.enabled": true,
+    "explorer.confirmDragAndDrop": false,
+    "git.autofetch": true,
+    "terminal.integrated.scrollback": 50000,
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot-labs.showBrushesLenses": false,
+    "github.copilot.advanced": {},
+    "editor.stickyScroll.enabled": true,
+    "editor.mouseWheelScrollSensitivity": 1,
+    "errorLens.excludeBySource": ["ts(7030)"],
+    "errorLens.enabledDiagnosticLevels": ["info", "error"],
+    "gitlens.remotes": [
+      {
+        "domain": "git.statshelix.com",
+        "type": "Gitea"
+      }
+    ],
+    "eslint.enable": true,
+    "githubPullRequests.pullBranch": "never",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorTheme": "GitHub Dark Default"
+  }
