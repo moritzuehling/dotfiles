@@ -4,7 +4,7 @@ alias pacman=sudo pacman
 pacman -Syu
 pacman -S base-devel hyprland pipewire xdg-desktop-portal-hyprland wireplumber \
 polkit-kde-agent qt5-wayland qt6-wayland swaybg  waybar rofi cliphist udiskie dolphin kitty pavucontrol \
-git-lfs spotify-launcher
+git-lfs spotify-launcher jq
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup update
@@ -32,6 +32,8 @@ pacman -S spotify-launcher
 
 
 paru -S rofi-lbonn-wayland
+
+paru -S google-chrome
 
 cargo install -f wasm-bindgen-cli --version 0.2.87
 

@@ -6,4 +6,4 @@ ln -sf $HOME/.config/waybar/no-screenshare.css $HOME/.config/waybar/active.css
 
 touch -m $HOME/.config/waybar/style.css
 
-swww img "$HOME/Pictures/wallpapers/1.png" --transition-step 255
+swww img "$HOME/Pictures/wallpapers/neuro.png" --transition-step 255
