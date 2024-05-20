@@ -1,0 +1,38 @@
+[Unit]
+Description=PipeWire RNNoise
+ConditionUser=!root
+Wants=pipewire.service pipewire-session-manager.service
+After=pipewire.service pipewire-session-manager.service
+
+[Service]
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+NoNewPrivileges=yes
+RestrictNamespaces=yes
+SystemCallArchitectures=native
+SystemCallFilter=@system-service
+Type=simple
+ExecStart=/usr/bin/pipewire -c filter-chain.conf
+Restart=on-failure
+Slice=session.slice
+CPUAffinity=16-23
+
+[Install]
+WantedBy=default.target
+
+
+
+
+#[Unit]
+#Description=Denoise microphone input
+#Requires=jack.service
+#After=jack.service
+
+#[Service]
+#Type=simple
+#Environment=LV2_PATH=/home/noah/git/noise-suppression-for-voice/build-x64/bin
+#ExecStart=/usr/bin/jalv -i -n rnnoise https://github.com/werman/noise-suppression-for-voice
+#TimeoutStopSec=1
+
+#[Install]
+#WantedBy=default.target
