@@ -34,6 +34,7 @@
   "github.copilot.advanced": {},
   "editor.stickyScroll.enabled": true,
   "editor.mouseWheelScrollSensitivity": 1,
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
   "errorLens.excludeBySource": ["ts(7030)"],
   "errorLens.enabledDiagnosticLevels": ["info", "error"],
   "gitlens.remotes": [
